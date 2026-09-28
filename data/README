@@ -1,1 +1,19 @@
-CBIS-DDSM
+# Data Directory (CBIS-DDSM)
+
+Due to file size constraints, the raw medical imaging data is not included in this repository. You must download the dataset manually before running the pipeline.
+
+## Download Instructions
+
+1. Visit **The Cancer Imaging Archive (TCIA)**: [CBIS-DDSM Collection](https://www.cancerimagingarchive.net/collection/cbis-ddsm/).
+2. Download the **Calcification** training and test subsets (both the images and the CSV description files).
+3. Extract the downloaded files and place them directly into this `data/` directory.
+
+## Required File Structure
+
+Before running the notebooks, ensure your `data/` folder looks exactly like this:
+
+data/
+├── calc_case_description_train_set.csv
+├── calc_case_description_test_set.csv
+├── CBIS-DDSM/                 # The unzipped directory containing raw DICOM folders
+└── README.md                  # This file
