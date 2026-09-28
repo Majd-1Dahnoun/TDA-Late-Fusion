@@ -8,7 +8,7 @@ This repository contains the experimental pipeline and evaluation code for the *
 The project investigates whether multimodal feature fusion of **Cubical Persistent Homology (TDA)** and **EfficientNetB0 (CNN)** improves microcalcification classification on the **CBIS-DDSM** dataset. Evaluated across a four-model ablation study (M1–M4), the results demonstrate that late-stage offline TDA fusion introduces representational noise that degrades overall discrimination and creates a structural bias penalizing benign localization.
 
 ## Repository Structure
-
+```
 TDA-Late-Fusion/
 ├── data/                  # CBIS-DDSM data directory
 ├── manifests/             # Preprocessed patient-stratified split manifests
@@ -17,7 +17,7 @@ TDA-Late-Fusion/
 ├── environment.yml        # Conda environment specification (Python 3.10)
 ├── .gitignore
 └── README.md
-
+```
 ## Model Configurations
 M1 (Custom CNN): 3 block convolutional baseline trained from scratch.
 
@@ -50,7 +50,7 @@ All Lesions: M4 (0.3264) > M2 (0.3190) > M3 (0.3023)
 ## Setup & Reproduction
 
 Clone the repository:
-git clone [https://github.com/](https://github.com/)[Your-Username]/TDA-Late-Fusion.git
+git clone https://github.com/Majd-1Dahnoun/TDA-Late-Fusion.git
 cd TDA-Late-Fusion
 
 Create and activate the environment:
